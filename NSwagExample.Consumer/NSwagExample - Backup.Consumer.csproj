@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NSwagExample.13.20.0.And.NSwag.Net60.OK\NSwagExample.13.20.0.And.NSwag.Net60.OK.csproj" />
+    <ProjectReference Include="..\NSwagExample.14.0.0-preview008.And.NSwag.Net80.OK\NSwagExample.14.0.0-preview008.And.NSwag.Net80.OK.csproj" />
+    <ProjectReference Include="..\NSwagExample.14.0.0-preview009.And.NSwag.Net80.NOK\NSwagExample.14.0.0-preview009.And.NSwag.Net80.NOK.csproj" />
+    <ProjectReference Include="..\NSwagExample.14.1.0.And.NSwag.Net80.NOK\NSwagExample.14.1.0.And.NSwag.Net80.NOK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+</Project>

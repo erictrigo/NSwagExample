@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NSwagExample.13.20.0.And.NSwag.Net60.OK", "NSwagExample.13.20.0.And.NSwag.Net60.OK\NSwagExample.13.20.0.And.NSwag.Net60.OK.csproj", "{D266B3D2-68FD-4C4C-BB19-C104D05EEE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSwagExample.14.0.0-preview009.And.NSwag.Net80.NOK", "NSwagExample.14.0.0-preview009.And.NSwag.Net80.NOK\NSwagExample.14.0.0-preview009.And.NSwag.Net80.NOK.csproj", "{8DC6C380-FDDE-48CA-83AF-F7BCE779C69B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSwagExample.14.1.0.And.NSwag.Net80.NOK", "NSwagExample.14.1.0.And.NSwag.Net80.NOK\NSwagExample.14.1.0.And.NSwag.Net80.NOK.csproj", "{3F59E879-174A-4A4C-B337-096E2264C581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSwagExample.14.0.0-preview008.And.NSwag.Net80.OK", "NSwagExample.14.0.0-preview008.And.NSwag.Net80.OK\NSwagExample.14.0.0-preview008.And.NSwag.Net80.OK.csproj", "{F08F54E8-6369-4382-977C-A7F62ADD713D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSwagExample.Consumer", "NSwagExample.Consumer\NSwagExample.Consumer.csproj", "{ECD7C0B6-7BAA-4109-AF86-E93A3958257F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D266B3D2-68FD-4C4C-BB19-C104D05EEE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D266B3D2-68FD-4C4C-BB19-C104D05EEE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D266B3D2-68FD-4C4C-BB19-C104D05EEE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D266B3D2-68FD-4C4C-BB19-C104D05EEE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC6C380-FDDE-48CA-83AF-F7BCE779C69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC6C380-FDDE-48CA-83AF-F7BCE779C69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC6C380-FDDE-48CA-83AF-F7BCE779C69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC6C380-FDDE-48CA-83AF-F7BCE779C69B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F59E879-174A-4A4C-B337-096E2264C581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F59E879-174A-4A4C-B337-096E2264C581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F59E879-174A-4A4C-B337-096E2264C581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F59E879-174A-4A4C-B337-096E2264C581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08F54E8-6369-4382-977C-A7F62ADD713D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08F54E8-6369-4382-977C-A7F62ADD713D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08F54E8-6369-4382-977C-A7F62ADD713D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08F54E8-6369-4382-977C-A7F62ADD713D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD7C0B6-7BAA-4109-AF86-E93A3958257F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD7C0B6-7BAA-4109-AF86-E93A3958257F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD7C0B6-7BAA-4109-AF86-E93A3958257F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD7C0B6-7BAA-4109-AF86-E93A3958257F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BC10F2B-977B-479D-90E5-0093926E1CEC}
+	EndGlobalSection
+EndGlobal

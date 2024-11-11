@@ -1,0 +1,237 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Minimal",
+        "version": "1.0"
+    },
+    "paths": {
+        "/TestPartner/EndpointA": {
+            "post": {
+                "tags": [
+                    "TestPartner/Outbound"
+                ],
+                "summary": "Endpoint A",
+                "description": "",
+                "parameters": [
+                    {
+                        "description": "Parameter A",
+                        "in": "query",
+                        "name": "parameterA",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "properties": {
+                                        "data": {
+                                            "properties": {
+                                                "section1": {
+                                                    "$ref": "#/components/schemas/Section.TestPartner.TestClassA.1"
+                                                },
+                                                "section2": {
+                                                    "$ref": "#/components/schemas/Section.TestPartner.TestClassA.2"
+                                                }
+                                            },
+                                            "required": [
+                                                "section1",
+                                                "section2"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "example": [
+                                {
+                                    "data": {
+                                        "section1": {},
+                                        "section2": {}
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "example": [],
+                                    "items": {},
+                                    "maxItems": 0,
+                                    "type": "array"
+                                }
+                            }
+                        },
+                        "description": ""
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "properties": {
+                                            "errors": {
+                                                "items": {
+                                                    "properties": {
+                                                        "jsonPath": {
+                                                            "description": "JSON path in JMESPath format",
+                                                            "type": "string"
+                                                        },
+                                                        "messages": {
+                                                            "items": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": "array"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "array"
+                                            },
+                                            "position": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "type": "array"
+                                }
+                            }
+                        },
+                        "description": "JSON response with error message and location"
+                    }
+                },
+                "security": [
+                    {
+                        "Bearer Authentication": []
+                    }
+                ]
+            }
+        },
+        "/TestPartner/EndpointB": {
+            "post": {
+                "tags": [
+                    "TestPartner/Outbound"
+                ],
+                "summary": "Endpoint B",
+                "description": "",
+                "parameters": [
+                    {
+                        "description": "Parameter B",
+                        "in": "query",
+                        "name": "parameterB",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "properties": {
+                                        "data": {
+                                            "properties": {
+                                                "section1": {
+                                                    "$ref": "#/components/schemas/Section.TestPartner.TestClassB.1"
+                                                },
+                                                "section2": {
+                                                    "$ref": "#/components/schemas/Section.TestPartner.TestClassB.2"
+                                                }
+                                            },
+                                            "required": [
+                                                "section1",
+                                                "section2"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "example": [
+                                {
+                                    "data": {
+                                        "section1": {},
+                                        "section2": {}
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "example": [],
+                                    "items": {},
+                                    "maxItems": 0,
+                                    "type": "array"
+                                }
+                            }
+                        },
+                        "description": ""
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "properties": {
+                                            "errors": {
+                                                "items": {
+                                                    "properties": {
+                                                        "jsonPath": {
+                                                            "description": "JSON path in JMESPath format",
+                                                            "type": "string"
+                                                        },
+                                                        "messages": {
+                                                            "items": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": "array"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "array"
+                                            },
+                                            "position": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "type": "array"
+                                }
+                            }
+                        },
+                        "description": "JSON response with error message and location"
+                    }
+                },
+                "security": [
+                    {
+                        "Bearer Authentication": []
+                    }
+                ]
+            }
+        },
+    },
+    "components": {
+        "schemas": {
+            "Section.TestPartner.TestClassA.1": {},
+            "Section.TestPartner.TestClassA.2": {},
+            "Section.TestPartner.TestClassB.1": {},
+            "Section.TestPartner.TestClassB.2": {}
+        }
+    }
+}

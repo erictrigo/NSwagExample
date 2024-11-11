@@ -1,0 +1,31 @@
+﻿<!--EXTERNAL_PROPERTIES: NSwagExe_Net80-->
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<Folder Include="clients\" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Macross.Json.Extensions" Version="3.0.0" />
+		<PackageReference Include="NSwag.MSBuild" Version="14.0.0-preview008">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<TestPartnerSpecs Include="TestPartner/openapi/*.json" />
+	</ItemGroup>
+	<Target Name="generatePartnerClients" BeforeTargets="BeforeBuild">
+		<Exec Command="$(NSwagExe_Net80) run TestPartner/nswag/nswag.%(TestPartnerSpecs.Filename).json /variables:Configuration=$(Configuration)" />
+	</Target>
+	<Target Name="forceReGenerationOnRebuild" AfterTargets="CoreClean">
+		<ItemGroup>
+			<FilesToDelete Include="clients/*.cs" />
+		</ItemGroup>
+		<Delete Files="@(FilesToDelete)">
+		</Delete>
+	</Target>
+</Project>
