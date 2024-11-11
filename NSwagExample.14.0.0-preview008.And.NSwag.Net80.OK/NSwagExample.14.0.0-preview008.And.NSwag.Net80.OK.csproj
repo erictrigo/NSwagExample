@@ -9,7 +9,6 @@
 		<Folder Include="clients\" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Macross.Json.Extensions" Version="3.0.0" />
 		<PackageReference Include="NSwag.MSBuild" Version="14.0.0-preview008">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
